@@ -1,0 +1,22 @@
+Using the Clock program you created, perform the following
+tests and record your observations.
+
+1. What happens if you enter a String instead of a number?
+A runtime error occurs because the scanner expected an integer
+but got a string instead.
+
+2. What happens if you enter an extremely large number, for 
+   example: 3,000,000,000? 
+A runtime error because the max range of an int that's
+positive is 2,147,483,647.
+
+3. What happens if you enter a negative number?
+The output displays a logic error because the program only
+expects positive numbers.
+
+4. List and explain the Error Type for each of the above three cases
+   based on your observations.
+- Runtime error
+- Runtime error
+- Logic error
+(All explanations above)

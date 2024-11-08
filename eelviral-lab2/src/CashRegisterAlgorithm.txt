@@ -1,0 +1,83 @@
+Cash Register Algorithm
+
+Complete each of the following five items to create your algorithm.
+
+1. List all of the input(s) and output(s).
+	Input:
+		- The amount of change (in cents) provided by the user.
+	Outputs:
+		- Number of quarters
+		- Number of dimes
+		- Number of nickels
+		- Number of pennies
+
+
+2. Figure out the computations needed to calculate outputs from the input.
+	The outputs can be calculated from the input in two ways:
+		Method 1: subtract each coin (quarter, dime, etc.) from the total in a loop
+		and increment each until the total reaches zero.
+		
+		Method 2: perform a floor division against the total for each coin value (25 
+		for quarters, 10 for dimes, etc.), until the total reaches zero.
+	
+	I decided to use method 1 to calculate the outputs for this lab.
+
+
+3. Write all of the variable declarations needed for your inputs, outputs 
+   and computational results.
+	Variables declarations needed:
+		- int q = 0; (for quarters)
+		- int d = 0; (for dimes)
+		- int n = 0; (for nickels)
+		- int p = 0; (for pennies)
+		
+
+4. Translate the computations described into Java expressions and statements.
+	(Computations translated on CashRegister.java)
+	
+	
+5. Describe your algorithm in pseudocode: how you will collect input, perform
+   calculations, and produce output.
+	START Main
+		GET cents as integer
+		INIT quarters as integer = 0
+		INIT dimes as integer = 0
+		INIT nickels as integer = 0
+		INIT pennies as integer = 0
+		WHILE cents > 0
+			IF cents - quarters > 0 THEN 
+				INCREMENT quarters by 1
+				DECREMENT cents by 25
+			ELSE IF cents - dimes > 0 THEN
+				INCREMENT dimes by 1
+				DECREMENT cents by 10
+			ELSE IF cents - nickels > 0 THEN
+				INCREMENT nickels by 1
+				DECREMENT cents by 5
+			ELSE
+				SET pennies = cents
+				SET cents = 0
+			ENDIF
+		ENDWHILE
+		IF quarters == 0 THEN
+			PRINT "1 quarter"
+		ELSE
+			PRINT "n quarters"
+		ENDIF
+		IF dimes == 0 THEN
+			PRINT "1 dime"
+		ELSE
+			PRINT "n dimes"
+		ENDIF
+		IF nickels == 0 THEN
+			PRINT "1 nickel"
+		ELSE
+			PRINT "n nickels"
+		ENDIF
+		IF pennies == 0 THEN
+			PRINT "1 penny"
+		ELSE
+			PRINT "n pennies"
+		ENDIF
+	END Main
+

@@ -1,0 +1,4 @@
+My name is Eddie Elvira.
+I am majoring in Computer Engineering and minoring in Computer Science.
+I work remotely as a Full Stack Engineer at a tech startup and I hope
+to work more closely with hardware to build advanced robots one day.

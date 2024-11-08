@@ -1,0 +1,25 @@
+For each of the following items, make the specified modification to your
+MyHelloWorld.java program, try to compile and run it, and indicate the
+Error Type you observe: syntax, runtime, logic or no error.
+
+After you report the Error Type you observed, fix the bug (undo the change
+you made) before moving on to the next item.
+
+1. Change the first println to print
+Error Type: Logic error
+	
+2. Change the second println to printing
+Error Type: Runtime error
+
+3. Remove the semicolon at the end of one of the statements
+Error Type: Syntax error
+
+4. Remove the last brace of the program
+Error Type: Syntax error
+	
+5. Change main to man
+Error Type: Runtime error
+
+6. Try something else horrible and describe what you did and observed
+Operation description: Removed "String[] args" parameter in main
+Error Type: Runtime error
